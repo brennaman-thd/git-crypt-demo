@@ -19,6 +19,7 @@ apt install -y git-crypt
 
 ## Mac OS X
 brew install git-crypt
+
 brew install gpg
 
 ########################################################################################################
