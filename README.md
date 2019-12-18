@@ -22,7 +22,7 @@ brew install git-crypt
 
 brew install gpg
 
-########################################################################################################
+#########################################################################################
 
 ## Encrypt files
 cd /path/to/<my-repo>
@@ -34,3 +34,16 @@ where <files-to-encrypt> follows the same syntax as files specified in .gitignor
 
 Add files specified in .gitattributes to <my-repo> and push up to Git host
 Verify in Git host files are encrypted
+
+#########################################################################################
+
+## GPG 
+gpg --gen-key 
+
+gpg --list-keys
+
+git-crypt add-gpg-user "Paul Brennaman <paul.brennaman@outlook.com>"
+
+git-crypt status
+
+git-crypt status -f
