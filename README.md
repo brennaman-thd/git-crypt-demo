@@ -26,14 +26,22 @@ brew install gpg
 
 ## Encrypt files
 cd /path/to/<my-repo>
+  
 git-crypt init
+
 vi .gitattributes
+
 Specify future files to encrypt in .gitattributes
+
 <files-to-encrypt> filter=git-crypt diff=git-crypt
+  
 where <files-to-encrypt> follows the same syntax as files specified in .gitignore
+  
 
 Add files specified in .gitattributes to <my-repo> and push up to Git host
+  
 Verify in Git host files are encrypted
+
 
 #########################################################################################
 
